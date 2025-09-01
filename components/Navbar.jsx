@@ -1,9 +1,17 @@
+"use client";
+
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-        {/* Logo */}
-        <div className="text-xl font-bold text-blue-600">DevConnect</div>
+        {/* Logo as landing page button */}
+        <div className="text-xl font-bold text-blue-600">
+          <Link href="/" className="hover:text-blue-800">
+            DevConnect
+          </Link>
+        </div>
 
         {/* Search Bar */}
         <div className="hidden md:flex flex-1 mx-4">
@@ -17,11 +25,13 @@ export default function Navbar() {
         {/* Icons */}
         <div className="flex items-center space-x-4">
           <button>🔔</button>
-          <img
-            src="/devconnect.png"
-            alt="Profile"
-            className="w-8 h-8 rounded-full border"
-          />
+          <Link href="/profile/[username]" as={`/profile/malhar`}>
+            <img
+              src="/devconnect.png"
+              alt="Profile"
+              className="w-8 h-8 rounded-full border cursor-pointer"
+            />
+          </Link>
         </div>
       </div>
     </nav>

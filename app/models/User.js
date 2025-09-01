@@ -1,13 +1,14 @@
-// import mongoose from "mongoose";
+// models/User.js
+import mongoose from "mongoose";
 
-// const UserSchema = new mongoose.Schema(
-//   {
-//     name: { type: String, required: true },
-//     email: { type: String, required: true, unique: true },
-//     bio: { type: String },
-//   },
-//   { timestamps: true }
-// );
+const UserSchema = new mongoose.Schema(
+  {
+    name: { type: String, required: true },
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true }, // hashed password
+    bio: { type: String, default: "" },
+  },
+  { timestamps: true }
+);
 
-// // Avoid recompiling model in dev
-// export default mongoose.models.User || mongoose.model("User", UserSchema);
+export default mongoose.models.User || mongoose.model("User", UserSchema);

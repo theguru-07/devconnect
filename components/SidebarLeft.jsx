@@ -1,27 +1,66 @@
+"use client";
+import { useRouter } from "next/navigation"; // FIXED import
+
 export default function SidebarLeft() {
+  const router = useRouter(); // Initialize router
+
   return (
     <aside className="bg-white rounded-lg shadow p-4 w-full">
       {/* Navigation Links */}
       <nav className="space-y-3">
+
+        {/* Home link with navigation */}
         <div className="flex items-center gap-2 text-gray-700 hover:text-indigo-600 cursor-pointer">
           <span>🏠</span>
           <span>Home</span>
         </div>
+
+        {/* My Network link with navigation */}
         <div className="flex items-center gap-2 text-gray-700 hover:text-indigo-600 cursor-pointer">
           <span>👥</span>
-          <span>My Network</span>
+                    <button
+            className="bg-transparent p-0 m-0 text-gray-700 hover:text-indigo-600 cursor-pointer focus:outline-none"
+            onClick={() => router.push("/networks")}
+            type="button"
+          >
+            My Network
+          </button>
         </div>
-        <div className="flex items-center gap-2 text-gray-700 hover:text-indigo-600 cursor-pointer">
+
+        {/* jobs link with navigation */}
+        <div className="flex items-center gap-2 text-gray-700 hover:text-indigo-600">
           <span>💼</span>
-          <span>Jobs</span>
+          <button
+            className="bg-transparent p-0 m-0 text-gray-700 hover:text-indigo-600 cursor-pointer focus:outline-none"
+            onClick={() => router.push("/jobs")}
+            type="button"
+          >
+            Jobs
+          </button>
         </div>
+
+        {/* messaging link with navigation */}
         <div className="flex items-center gap-2 text-gray-700 hover:text-indigo-600 cursor-pointer">
           <span>💬</span>
-          <span>Messaging</span>
+          <button
+            className="bg-transparent p-0 m-0 text-gray-700 hover:text-indigo-600 cursor-pointer focus:outline-none"
+            onClick={() => router.push("/messages")}
+            type="button"
+          >
+            Messaging
+          </button>
         </div>
+
+        {/* notifications link with navigation */}
         <div className="flex items-center gap-2 text-gray-700 hover:text-indigo-600 cursor-pointer">
           <span>🔔</span>
-          <span>Notifications</span>
+          <button
+            className="bg-transparent p-0 m-0 text-gray-700 hover:text-indigo-600 cursor-pointer focus:outline-none"
+            onClick={() => router.push("/notification")}
+            type="button"
+          >
+            Notifications
+          </button>
         </div>
       </nav>
 

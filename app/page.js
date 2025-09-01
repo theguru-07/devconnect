@@ -1,9 +1,7 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
 import SidebarLeft from '@/components/SidebarLeft';
 import Feed from '@/components/Feed';
-import Sidebar from '@/components/Sidebar';
 import SidebarRight from '@/components/SidebarRight';
 
 export default function Home() {
