@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import Messages from "@/components/Messages";
 
 export const metadata = {
   title: "DevConnect",
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <div style={{ display: "flex" }}>
           <Sidebar />
-          <main style={{ flex: 1, padding: "20px" }}>{children}</main>
+          <main style={{ flex: 1 }}>{children}</main>
         </div>
       </body>
     </html>

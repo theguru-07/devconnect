@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
         {/* Logo as landing page button */}
         <div className="text-xl font-bold text-blue-600">
-          <Link href="/" className="hover:text-blue-800">
+          <Link href="/" className="hover:text-blue-800 justify-around">
             DevConnect
           </Link>
         </div>
@@ -23,8 +23,10 @@ export default function Navbar() {
         </div>
 
         {/* Icons */}
-        <div className="flex items-center space-x-4">
-          <button>🔔</button>
+        <div className="flex items-center space-x-4 cursor-pointer">
+            <Link href="/notification" className="relative">
+              🔔
+            </Link>
           <Link href="/profile/[username]" as={`/profile/malhar`}>
             <img
               src="/devconnect.png"

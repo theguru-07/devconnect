@@ -48,9 +48,7 @@ export default function Messages() {
   }, []);
 
   return (
-    <div className="p-4 border rounded-lg shadow-sm bg-white">
-      <h2 className="text-lg font-semibold mb-3 text-black">Messages</h2>
-
+    <div className="border shadow-sm bg-white">
       {messages.length === 0 ? (
         <p className="text-gray-500">No messages yet.</p>
       ) : (
@@ -58,7 +56,7 @@ export default function Messages() {
           {messages.map((msg) => (
             <li
               key={msg._id}
-              className="flex justify-between items-center p-2 border-b hover:bg-gray-50 rounded-lg cursor-pointer"
+              className="flex justify-between items-center p-2 border-b hover:bg-blue-50 rounded-lg cursor-pointer"
             >
               <div>
                 <p className="font-medium text-black">{msg.name}</p>

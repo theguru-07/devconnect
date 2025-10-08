@@ -12,7 +12,8 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="bg-white rounded-2xl shadow p-4 sticky top-20">
+    <div className="hidden lg:block w-1/4 p-4">
+    <aside className="bg-white shadow p-4 sticky top-20 ">
       {/* Profile Picture */}
       <div className="flex flex-col items-center">
         <img
@@ -47,5 +48,6 @@ export default function Sidebar() {
         </button>
       </div>
     </aside>
+    </div>
   );
 }
