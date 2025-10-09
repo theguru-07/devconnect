@@ -1,7 +1,4 @@
 import "./globals.css";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/Sidebar";
-import Messages from "@/components/Messages";
 
 export const metadata = {
   title: "DevConnect",

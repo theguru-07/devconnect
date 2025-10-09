@@ -11,8 +11,12 @@
   "dependencies": {
     "lucide-react": "^0.542.0",
     "mongoose": "^8.17.1",
+<<<<<<< HEAD
     "next": "15.4.6",
     "next-auth": "^4.24.11",
+=======
+    "next": "^15.5.4",
+>>>>>>> 962e515ef03f8436f4e43319ac39ee620c49ba1e
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
