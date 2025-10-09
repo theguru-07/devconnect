@@ -46,7 +46,7 @@ export default function Sidebar() {
         <button className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 rounded-lg text-sm">
           Logout
         </button>
-      </div>
+      </div> 
     </aside>
     </div>
   );
