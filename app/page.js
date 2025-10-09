@@ -7,7 +7,7 @@ import SidebarRight from '@/components/SidebarRight';
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <h1 className="text-2xl font-bold text-blue-600">Welcome to DevConnect</h1>
+      <h1 className="text-2xl pl-4 pt-3 font-bold text-blue-600">Welcome to DevConnect</h1>
       {/* Main Content */}
       <div className="flex max-w-7xl mx-auto mt-4 px-4 gap-4">
         {/* Left Sidebar */}
