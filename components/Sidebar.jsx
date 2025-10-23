@@ -1,6 +1,4 @@
 "use client";
-import { useState } from "react";
-
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -43,6 +41,7 @@ export default function Sidebar() {
             <a
               href={user.website}
               target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-500 hover:underline"
             >
               {user.website.replace("https://", "")}
@@ -50,18 +49,6 @@ export default function Sidebar() {
           </p>
         </div>
 
-<<<<<<< HEAD
-      {/* Actions */}
-      <div className="mt-4 flex gap-2">
-        <button className="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg text-sm">
-          Edit Profile
-        </button>
-        <button className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 rounded-lg text-sm">
-          Logout
-        </button>
-      </div> 
-    </aside>
-=======
         {/* Actions */}
         <div className="mt-4 flex gap-2">
           <Link
@@ -70,13 +57,11 @@ export default function Sidebar() {
           >
             Edit Profile
           </Link>
-
           <button className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 py-2 rounded-lg text-sm">
             Logout
           </button>
         </div>
       </aside>
->>>>>>> 962e515ef03f8436f4e43319ac39ee620c49ba1e
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import "./globals.css";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
 
 export const metadata = {
   title: "DevConnect",
@@ -9,9 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <Navbar /> */}
+        <Navbar />
         <div style={{ display: "flex" }}>
-          {/* <Sidebar /> */}
+          <Sidebar />
           <main style={{ flex: 1 }}>{children}</main>
         </div>
       </body>
