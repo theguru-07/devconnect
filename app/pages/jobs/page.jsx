@@ -1,4 +1,4 @@
-import JobCard from "@/components/JobCard";
+import JobCard from "../components/JobCard";
 
 export default function JobsPage() {
   const jobs = [
@@ -113,3 +113,4 @@ export default function JobsPage() {
     </div>
   );
 }
+
