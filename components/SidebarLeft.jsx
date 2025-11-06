@@ -20,7 +20,7 @@ export default function SidebarLeft() {
           <span>👥</span>
                     <button
             className="bg-transparent p-0 m-0 text-gray-700 hover:text-indigo-600 cursor-pointer focus:outline-none"
-            onClick={() => router.push("/networks")}
+            onClick={() => router.push("/pages/networks")}
             type="button"
           >
             My Network
@@ -32,7 +32,7 @@ export default function SidebarLeft() {
           <span>💼</span>
           <button
             className="bg-transparent p-0 m-0 text-gray-700 hover:text-indigo-600 cursor-pointer focus:outline-none"
-            onClick={() => router.push("/jobs")}
+            onClick={() => router.push("/pages/jobs")}
             type="button"
           >
             Jobs
@@ -44,7 +44,7 @@ export default function SidebarLeft() {
           <span>💬</span>
           <button
             className="bg-transparent p-0 m-0 text-gray-700 hover:text-indigo-600 cursor-pointer focus:outline-none"
-            onClick={() => router.push("/messages")}
+            onClick={() => router.push("/pages/messages")}
             type="button"
           >
             Messaging
@@ -56,7 +56,7 @@ export default function SidebarLeft() {
           <span>🔔</span>
           <button
             className="bg-transparent p-0 m-0 text-gray-700 hover:text-indigo-600 cursor-pointer focus:outline-none"
-            onClick={() => router.push("/notification")}
+            onClick={() => router.push("/pages/notification")}
             type="button"
           >
             Notifications

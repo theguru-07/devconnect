@@ -24,7 +24,7 @@ export default function Navbar() {
 
         {/* Icons */}
         <div className="flex items-center space-x-4 cursor-pointer">
-            <Link href="/notification" className="relative">
+            <Link href="//pages/notification" className="relative">
               🔔
             </Link>
           <Link href="/profile/[username]" as={`/profile/malhar`}>
